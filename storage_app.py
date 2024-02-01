@@ -1,11 +1,10 @@
 import sys
-import pynotepad as PyN1
 import os
 import data as dt
 import shutil
 from zipfile import ZipFile
 try:
-	import pynotepad
+	import pynotepad as PyN1
 except ImportError:
 	print('pynotepad plugin doesnt exist, but you can continue use PyFiles, for install it. You have to write first !eval(for write PyCode), and then write dowland("plugin") use the strings.')
 print("Welcome to PyFiles. Write !help for help.")

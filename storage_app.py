@@ -13,7 +13,7 @@ def s_app():
 	def dowland(plugin):
 		try:
 			if plugin == "pynotepad":
-				print('Did succesfuly')
+				print('Not added yet')
 			else:
 				print('plugin doesnt exists or internet.')
 		except:

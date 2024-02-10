@@ -21,8 +21,13 @@ def s_app():
 	s_user = input("- ")
 	
 	if s_user == "!help":
-		print("commands:\n!info, !see.dir, !delete.file, !delete.dir, !check.zip, !delete.dir_content !see.file, !see.files, !extract.zip, !add.file, !add.dir, !change.dir, !compress.zip, !write.file(it needs PyNote plugin), !exit, !rename")
+		print("commands:\n!info, !see.dir, !kill.storage(will delete the pyfiles app for updates), !delete.file, !delete.dir, !check.zip, !delete.dir_content !see.file, !see.files, !extract.zip, !add.file, !add.dir, !change.dir, !compress.zip, !write.file(it needs PyNote plugin), !exit, !rename")
 		s_app()
+	elif s_user == "!kill.storage":
+		print("Deleting Storage..")
+		os.remove("storage_app.py")
+		time.sleep(0.2)
+		quit()
 	elif s_user == '!exit':
 		sys.exit()
 	elif s_user == '!see.dir':

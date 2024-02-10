@@ -26,7 +26,6 @@ def s_app():
 	elif s_user == "!kill.storage":
 		print("Deleting Storage..")
 		os.remove("storage_app.py")
-		time.sleep(0.2)
 		quit()
 	elif s_user == '!exit':
 		sys.exit()
